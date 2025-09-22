@@ -1,0 +1,22 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000000;
+    --color-dark-blue: #14213d;
+    --color-orange: #fca311;
+    --color-light-gray: #e5e5e5;
+    --color-white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark-blue);
+    background-color: var(--color-white);
+    overflow-x: hidden;
+}
