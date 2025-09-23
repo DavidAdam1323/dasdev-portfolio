@@ -21,6 +21,35 @@
   nav ul li {
     margin: 0 0.5rem;
   }
+
+  main {
+    margin-top: 100px;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .profile-image {
+    flex: 0 0 250px; /* flex-grow flex-shrink flex-basis */
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 15px;
+  }
 }
 
 /* Mobile Styles */
@@ -42,6 +71,36 @@
   }
 
   nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  main {
+    margin-top: 90px;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-image {
+    flex: 0 0 200px; /* flex-grow flex-shrink flex-basis */
+  }
+
+  .bio p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  footer {
+    padding: 1rem 0;
+  }
+
+  footer p {
     font-size: 0.9rem;
   }
 }
