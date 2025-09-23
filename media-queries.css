@@ -96,6 +96,10 @@
     text-align: left;
   }
 
+  .projects-info {
+    padding: 1.5rem 0.75rem;
+  }
+
   footer {
     padding: 1rem 0;
   }
