@@ -13,18 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d5c11f079.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>David Adam Silva</h1>
+        <div class="logo">
+          <i class="fa-solid fa-cubes"></i>
+          <h1>David Adam Silva</h1>
+        </div>
         <nav>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -36,6 +40,17 @@
           <div class="about-content">
             <div class="profile-image">
               <img src="https://media.licdn.com/dms/image/v2/D4E03AQG3QSuwHB--Wg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727000401559?e=1761177600&v=beta&t=rmVuEbZBX909swJaZjihN7IWN9uBY-hW76uIB1p_Y0k" alt="" />
+              <div class="about-socials">
+                <a href="https://github.com/DavidAdam1323" target="_blank" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/davidadamsilva/" target="_blank" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/DavidAdam1323" target="_blank" aria-label="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
             </div>
             <div class="bio">
               <p>
@@ -72,7 +87,7 @@
       <section id="projects" class="projects-section">
         <div class="container">
           <h2>My Projects</h2>
-          <div class="projects-container">
+          <div class="projects-content">
             <article class="projects-card">
               <div class="projects-image">
                 <img src="https://dasdev3d.vercel.app/images/project1.png" alt="">
@@ -84,7 +99,7 @@
                   QR codes to support recycling and sustainability.
                 </p>
                 <div class="projects-buttons">
-                  <a href="https://github.com/DavidAdam1323/eslando-SoCfinal-project" class="btn-1">GitHub</a>
+                  <a href="https://github.com/DavidAdam1323/eslando-SoCfinal-project" class="btn-1"><i class="fa-brands fa-github"></i> GitHub</a>
                   <a href="https://eslando.vercel.app/?product=2" class="btn-2">Live Demo</a>
                 </div>
               </div>
@@ -100,7 +115,7 @@
                   developers who bring digital visions to life.
                 </p>
                 <div class="projects-buttons">
-                  <a href="https://github.com/DavidAdam1323/cdrWebsite-vite" class="btn-1">GitHub</a>
+                  <a href="https://github.com/DavidAdam1323/cdrWebsite-vite" class="btn-1"><i class="fa-brands fa-github"></i> GitHub</a>
                   <a href="https://cdr-website-vite.vercel.app/" class="btn-2">Live Demo</a>
                 </div>
               </div>
@@ -116,11 +131,46 @@
                   boost engagement, and drive results online.
                 </p>
                 <div class="projects-buttons">
-                  <a href="https://github.com/DavidAdam1323/nvp-website-project" class="btn-1">GitHub</a>
+                  <a href="https://github.com/DavidAdam1323/nvp-website-project" class="btn-1"><i class="fa-brands fa-github"></i> GitHub</a>
                   <a href="https://davidadam1323.github.io/nvp-website-project/" class="btn-2">Live Demo</a>
                 </div>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+              <p>Feel free to reach out if you'd like to collaborate on a project or just want to say hello!</p>
+              <div class="contact-details">
+                <p><strong><i class="fa-solid fa-square-envelope"></i> Email:</strong> <a href="mailto:davidadamgtr@gmail.com">davidadamgtr@gmail.com</a></p>
+                <p><strong><i class="fas fa-phone-square-alt"></i> Phone:</strong> <a href="tel:+44 7395 559610">+44 7395 559610</a></p>
+              </div>
+              <div class="contact-image">
+                <img src="   https://cdn-icons-png.flaticon.com/512/9194/9194905.png " alt="">
+              </div>
+            </div>
+
+            <form action="" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required>
+                <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="email" name="email" required>
+                <label for="emal"><i class="fas fa-envelope"></i> Email</label>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" rows="7" required></textarea>
+                <label for="message"><i class="fas fa-comments"></i> Message</label>
+              </div>
+              <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
           </div>
         </div>
       </section>
